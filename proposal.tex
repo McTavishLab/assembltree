@@ -1,37 +1,57 @@
-\documentclass[letterpaper,12pt]{article}
-\usepackage{tabularx} 
-\usepackage{amsmath}  
-\usepackage{graphicx} 
-\usepackage[margin=1in,letterpaper]{geometry} 
-\usepackage{cite} 
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+
+\title{Assembletree: rotational project}
+\author{Yumary Vasquez}
+\date{January 2019}
 
 \begin{document}
 
-\title{Assembltree: rotational project}
-\author{Yumary Vasquez}
 \maketitle
 
-
+\section{Question}
+How does assembly methods effect phylogenetic inference?
 
 
 \section{Overview}
-
-
-
+There is plenty of research comparing assemblers and even more research comparing phylogenetic tree formation methods. Yet no research presently shows the comparison of assemblers in the context of phylogenetic trees. Assembly is the second step after sequencing in the process of NGS, making it one of the most vital steps to reach results. 
 
 
 \section{Procedures}
+Raw reads will be assembled using one of the assemblers. They will then be aligned and a tree will be created using RAxML. The assemblers is shown below. 
+
+1. get tree2reads first (simulated data)
+2. choose a few sequences or whole genome disease outbreak and use that tree and simulated data
+
+\subsection{Assembly}
+
+De novo Assemblers: SOAPdenovo, Velvet and SPAdes
+
+Assembly with Reference: BWA, Bowtie, SOAPaligner
 
 
 \section{Analysis}
+Output graph: A plot with trees of every result. Changes will be indicated in red (either topology or branch lengths). 
 
 
 \section{Data}
+Salmonella data: short time scale 
 
 
-
-
-
+\bibliographystyle{plain}
+\bibliography{bib}
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
